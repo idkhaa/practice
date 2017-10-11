@@ -25,8 +25,8 @@ class ViewController: UIViewController {
         
         tapCount = tapCount + 1
         print(tapCount)
-        if tapCount >= 5 {
-            Label2.text = "5"
+        if tapCount >= 10 {
+            Label2.text = "10"
         }
         
     }

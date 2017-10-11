@@ -18,13 +18,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a47-s9-KwU">
-                                <rect key="frame" x="140.5" y="70" width="94" height="21"/>
+                                <rect key="frame" x="141" y="70" width="94" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wHl-vA-vAT">
-                                <rect key="frame" x="157.5" y="191" width="60" height="30"/>
+                                <rect key="frame" x="158" y="191" width="60" height="30"/>
                                 <state key="normal" title="Push Me"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l1G-0V-Tth"/>
@@ -36,28 +36,49 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUV-1w-Voi">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUV-1w-Voi">
                                 <rect key="frame" x="157" y="426" width="60" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Push Me"/>
                                 <connections>
                                     <action selector="buttonTapped2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CPd-oD-q5b"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DKi-QC-rB3">
+                                <rect key="frame" x="139" y="487" width="97" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zX8-Rm-FXK">
+                                <rect key="frame" x="138" y="540" width="100" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="a47-s9-KwU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="Ub8-2u-nsQ"/>
-                            <constraint firstItem="wHl-vA-vAT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wf1-f7-6ou"/>
-                            <constraint firstItem="a47-s9-KwU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ep5-dA-AGF"/>
-                            <constraint firstItem="i3c-xc-o2Y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hbj-zW-W2m"/>
-                            <constraint firstItem="wHl-vA-vAT" firstAttribute="top" secondItem="a47-s9-KwU" secondAttribute="bottom" constant="100" id="pVP-tV-oGn"/>
-                            <constraint firstItem="i3c-xc-o2Y" firstAttribute="top" secondItem="wHl-vA-vAT" secondAttribute="bottom" constant="100" id="sM6-HB-aBr"/>
+                            <constraint firstItem="wHl-vA-vAT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="191" id="27F-pq-EcL"/>
+                            <constraint firstItem="rUV-1w-Voi" firstAttribute="top" secondItem="i3c-xc-o2Y" secondAttribute="bottom" constant="84" id="40b-O4-a5y"/>
+                            <constraint firstItem="wHl-vA-vAT" firstAttribute="centerX" secondItem="i3c-xc-o2Y" secondAttribute="centerX" id="7M4-pX-f9P"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zX8-Rm-FXK" secondAttribute="bottom" constant="97" id="DAg-0m-Rjf"/>
+                            <constraint firstItem="DKi-QC-rB3" firstAttribute="top" secondItem="rUV-1w-Voi" secondAttribute="bottom" constant="31" id="Q7v-3o-mY7"/>
+                            <constraint firstItem="zX8-Rm-FXK" firstAttribute="top" secondItem="DKi-QC-rB3" secondAttribute="bottom" constant="23" id="R6y-QX-O36"/>
+                            <constraint firstItem="zX8-Rm-FXK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="138" id="SL1-a9-KPu"/>
+                            <constraint firstItem="DKi-QC-rB3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="139" id="a9e-4j-bcx"/>
+                            <constraint firstItem="rUV-1w-Voi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dKL-5s-IpG"/>
+                            <constraint firstItem="DKi-QC-rB3" firstAttribute="centerX" secondItem="zX8-Rm-FXK" secondAttribute="centerX" id="g6Z-HK-ihJ"/>
+                            <constraint firstItem="a47-s9-KwU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="gEf-By-3oh"/>
+                            <constraint firstItem="i3c-xc-o2Y" firstAttribute="centerX" secondItem="rUV-1w-Voi" secondAttribute="centerX" id="jxt-wV-7z6"/>
+                            <constraint firstItem="rUV-1w-Voi" firstAttribute="centerX" secondItem="DKi-QC-rB3" secondAttribute="centerX" id="k5V-hG-Hnd"/>
+                            <constraint firstItem="a47-s9-KwU" firstAttribute="centerX" secondItem="wHl-vA-vAT" secondAttribute="centerX" id="y0p-hr-xGj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="Label2" destination="i3c-xc-o2Y" id="AVe-FU-5aq"/>
+                        <outlet property="text1" destination="DKi-QC-rB3" id="S9Q-OS-GEc"/>
+                        <outlet property="text2" destination="zX8-Rm-FXK" id="R2w-2D-bC2"/>
                         <outlet property="theLabel" destination="a47-s9-KwU" id="0aA-Mb-pg2"/>
                     </connections>
                 </viewController>
